@@ -1,5 +1,7 @@
 # ember-circle-progress
 
+[![Build Status](https://travis-ci.org/hugoruscitti/ember-circle-progress.svg?branch=master)](https://travis-ci.org/hugoruscitti/ember-circle-progress)
+
 This README outlines the details of collaborating on this Ember addon.
 
 ## Installation
