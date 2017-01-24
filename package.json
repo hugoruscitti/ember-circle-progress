@@ -1,7 +1,7 @@
 {
   "name": "ember-circle-progress",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Draw animated circular progress bars based on jquery-circle-progress",
   "keywords": [
     "ember-addon"
   ],
