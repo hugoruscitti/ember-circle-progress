@@ -3,7 +3,11 @@
 
 module.exports = {
   name: 'ember-circle-progress',
-  isDevelopingAddon: function() {
-    return true;
+
+  included: function(app) {
+    this._super.included.apply(this, arguments);
+
+    app.import(app.bowerDirectory + '/jquery-circle-progress/dist/circle-progress.js');
   }
+
 };
