@@ -1,0 +1,15 @@
+.ember-circle-progress {
+}
+
+.ember-circle-progress.ember-circle-progress-responsive {
+  position: relative;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.ember-circle-progress.ember-circle-progress-responsive canvas {
+  width: 100%;
+}
+
+.ember-circle-progress .progress-text {
+}
