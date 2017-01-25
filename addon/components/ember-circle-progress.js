@@ -22,10 +22,6 @@ export default Ember.Component.extend({
   didInsertElement() {
     let size = this.get('size');
 
-    if (this.get('responsive')) {
-      size = 1000;
-    }
-
     /*let circle = */ this.$().circleProgress({
       value: this.get('value'),
       size: size,
