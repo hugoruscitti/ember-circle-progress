@@ -7,7 +7,7 @@ module.exports = {
 
   afterInstall: function() {
     return this.addBowerPackageToProject('jquery-circle-progress');
-  }
+  },
 
   included: function(app) {
     this._super.included.apply(this, arguments);
