@@ -26,7 +26,7 @@ export default Ember.Component.extend({
       size = 1000;
     }
 
-    let circle = this.$().circleProgress({
+    /*let circle = */ this.$().circleProgress({
       value: this.get('value'),
       size: size,
       startAngle: this.get('startAngle'),
@@ -40,9 +40,9 @@ export default Ember.Component.extend({
     });
 
     if (this.get('responsive')) {
-      circle.on('circle-animation-progress', function(event, progress) {
-        this.$().find('.progress-text').html(Math.round(100 * progress) + '<i>%</i>');
-      });
+      //circle.on('circle-animation-progress', (event, progress) => {
+      //  this.$('.progress-text').html(Math.round(100 * progress) + '<i>%</i>');
+      //});
     }
 
   }
