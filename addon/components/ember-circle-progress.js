@@ -53,7 +53,13 @@ export default Ember.Component.extend({
   },
 
   drawText(textColor, size, valueStep) {
-    let ctx = this.$('canvas')[0].getContext('2d');
+    let canvas = this.$('canvas');
+
+    if (!canvas) {
+      return;
+    }
+
+    let ctx = canvas[0].getContext('2d');
 
     ctx.fillStyle = textColor;
     ctx.font = (size/4) + 'px arial';
