@@ -21,6 +21,10 @@ export default Ember.Component.extend({
   classNames: ['ember-circle-progress'],
   classNameBindings: ['responsive:ember-circle-progress-responsive'],
 
+  value_update: Ember.observer('value', function() {
+    this.$().circleProgress('value', this.get('value'));
+  }),
+
   didInsertElement() {
     let size = this.get('size');
     let textColor = this.get('textColor');
