@@ -1,11 +1,4 @@
-/*jshint node:true*/
+/* eslint-env node */
 module.exports = {
-  description: 'ember-circle-progress',
-
-  normalizeEntityName: function() {
-  },
-
-  afterInstall: function() {
-    return this.addBowerPackageToProject('jquery-circle-progress');
-  }
+  description: "ember-circle-progress"
 };

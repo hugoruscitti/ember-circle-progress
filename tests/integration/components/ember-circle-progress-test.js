@@ -1,25 +1,26 @@
-import { moduleForComponent, test } from 'ember-qunit';
+import { module, test } from 'qunit';
+import { setupRenderingTest } from 'ember-qunit';
+import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 
-moduleForComponent('ember-circle-progress', 'Integration | Component | ember circle progress', {
-  integration: true
-});
+module('Integration | Component | ember-circle-progress', function(hooks) {
+  setupRenderingTest(hooks);
 
-test('it renders', function(assert) {
+  test('it renders', async function(assert) {
+    // Set any properties with this.set('myProperty', 'value');
+    // Handle any actions with this.set('myAction', function(val) { ... });
 
-  // Set any properties with this.set('myProperty', 'value');
-  // Handle any actions with this.on('myAction', function(val) { ... });
+    await render(hbs`{{ember-circle-progress}}`);
 
-  this.render(hbs`{{ember-circle-progress}}`);
+    assert.equal(this.element.textContent.trim(), '');
 
-  assert.equal(this.$().text().trim(), '');
+    // Template block usage:
+    await render(hbs`
+      {{#ember-circle-progress}}
+        template block text
+      {{/ember-circle-progress}}
+    `);
 
-  // Template block usage:
-  this.render(hbs`
-    {{#ember-circle-progress}}
-      template block text
-    {{/ember-circle-progress}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
+    assert.equal(this.element.textContent.trim(), 'template block text');
+  });
 });
