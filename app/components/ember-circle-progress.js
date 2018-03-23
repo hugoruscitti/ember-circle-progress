@@ -1,1 +1,0 @@
-export { default } from 'ember-circle-progress/components/ember-circle-progress';
