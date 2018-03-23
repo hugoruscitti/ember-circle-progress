@@ -4,6 +4,8 @@ ember-circle-progress
 [![Build Status](https://travis-ci.org/hugoruscitti/ember-circle-progress.svg?branch=master)](https://travis-ci.org/hugoruscitti/ember-circle-progress)
 
 
+Demo: http://ember-circle-progress.surge.sh/
+
 Installation
 ------------------------------------------------------------------------------
 
