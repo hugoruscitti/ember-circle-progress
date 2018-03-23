@@ -1,7 +1,8 @@
 ember-circle-progress
 ==============================================================================
 
-[Short description of the addon.]
+[![Build Status](https://travis-ci.org/hugoruscitti/ember-circle-progress.svg?branch=master)](https://travis-ci.org/hugoruscitti/ember-circle-progress)
+
 
 Installation
 ------------------------------------------------------------------------------
