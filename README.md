@@ -17,7 +17,9 @@ ember install ember-circle-progress
 Usage
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+
+
+![](preview/image.png)
 
 
 Contributing
